@@ -1,4 +1,4 @@
-header{
+header{ /*the title*/
     border: 3px solid grey;
     padding: 15px;
     height: 5%;
@@ -7,14 +7,14 @@ header{
     text-align: center;
     font-size: 100%;
 }
-html *{
+html *{ /*global font setting*/
     font-family: Lucida Sans Unicode;
     color: grey;
 }
 body{
     margin: 0 auto;
 }
-.menu{
+.menu{ /*the main navbar*/
     margin-bottom: 50px;
     margin-top: 30px;
     margin-right: 100px;
@@ -35,7 +35,7 @@ body{
     color: lightgrey;
 }
 
-.items{
+.items{ /*secondary navbar */
     float: left;
     border: 2px solid grey;
     padding-right: 150px;
@@ -60,11 +60,11 @@ body{
 .items a:hover{
     color: lightgrey;
 }
-section{
+section{ 
     margin-bottom: 50px;
     text-align: justify;
 }
-#text{
+#text{ /*div containing the image and text*/
     float: left;
     margin-left: 50px;
     display:inline;
@@ -73,8 +73,8 @@ section{
 img{
      width:90%; 
      margin-left: auto;
-	 margin-right: auto;
-	 display: block;
+     margin-right: auto;
+     display: block;
      margin-top: 50px;
      margin-bottom: 50px;
 }
