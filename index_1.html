@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="utf-8">
+    <script>
+    function allowDrop(ev) {  
+        ev.preventDefault(); //Prevent default. Default is that data cannot be dropped
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("Text", ev.target.id); //Set dragged data
+    }
+
+    function drop(ev) {
+        ev.preventDefault(); //Prevent default. Default is open as link on drop
+        var data = ev.dataTransfer.getData("Text"); //Get dragged data
+        ev.target.appendChild(document.getElementById(data)); //Append dragged element into drop element
+    }
+    </script>
+</head>
+
+<body>
+    <div class="firstline">
+        <div id="blueDiv">
+            Text A
+        </div>
+    
+        <div id="yellowDiv">
+            Text B
+        </div>
+        
+        <div id="greenDiv">
+            <span>Text C</span>
+        </div>
+        <figure id="animatedfigure">
+            <img src="photo.jpg" width="200" height="200" border="2">
+            <figcaption>Photo 2</figcaption>
+        </figure>
+    </div>
+    
+    <div class="secondline">
+        <div id="draggableimageDiv">
+            <img src="photo.jpg" width="200" height="200" border="1" draggable="true" ondragstart="drag(event)" id="draggablepicture">
+            <div id="backgroundtext">Original image spot</div>
+        </div>
+        <div id="greyDiv">
+            Text D
+        </div>
+    </div>
+    
+    <div class="thirdline">
+        <div id="draganddrop1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="backgroundtext">Drag and Drop</div>
+        </div>
+        <div id="draganddrop2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="backgroundtext">Drag and Drop</div>
+        </div>
+    </div>
+</body>
+</html>
