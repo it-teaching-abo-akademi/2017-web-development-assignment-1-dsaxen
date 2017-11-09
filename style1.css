@@ -1,0 +1,118 @@
+html *{
+    font-family: Arial;
+}
+.firstline{
+    display: flex;
+    margin-bottom: 100px;
+}
+.secondline{
+    display: flex;
+    margin-bottom: 100px;
+}
+.thirdline{
+    display: flex;
+}
+#blueDiv{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+    margin-right: 250px;
+    
+}
+#yellowDiv{
+    width: 200px;
+    height: 200px;
+    
+    line-height: 200px;
+    font-size: 40px;
+    
+    background-color: yellow;
+    border: 2px solid black;
+    
+    margin-right: 150px;
+}
+#greenDiv{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+    font-size: 20px;
+    color: white;
+    background-color: #9BBB59;
+    border: 2px solid black;
+    margin-right: 250px;
+}
+#greenDiv span{ /*we need to position the text absolutely*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+#greyDiv{
+    width: 700px;
+    height: 200px;
+    margin-left: 420px;
+    position: relative;
+    
+    font-size: 20px;
+    color: red;
+    background-color: grey;
+    border: 3px solid red;
+}
+#backgroundtext{
+   line-height: 200px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   text-align: center;
+   z-index: -1;
+   overflow: hidden;
+}
+
+#animatedfigure{
+    text-align: center;
+    margin: 0; /* for some reason, figure had automatic margins*/
+    animation: fadein 3s infinite;
+}
+#draggableimageDiv{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#draganddrop1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #9BBB59;
+    margin-left: 100px;
+    margin-right: 820px;
+}
+#draganddrop2{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+    
+    border: 3px solid black;
+}
+
+@keyframes fadein {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
