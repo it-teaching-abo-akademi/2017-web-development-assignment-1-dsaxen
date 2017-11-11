@@ -1,7 +1,7 @@
 html *{
     font-family: Arial;
 }
-.firstline{
+.firstline{ /*the different horizontal div lines*/
     display: flex;
     margin-bottom: 100px;
 }
@@ -107,7 +107,7 @@ html *{
     border: 3px solid black;
 }
 
-@keyframes fadein {
+@keyframes fadein { /* the CSS3 animation, a fade in effect*/
    from {
       opacity: 0;
    }
