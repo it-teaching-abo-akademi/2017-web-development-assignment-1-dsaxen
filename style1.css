@@ -26,14 +26,13 @@ html *{
 #yellowDiv{
     width: 200px;
     height: 200px;
-   
+    margin-right: 150px;
+    position: relative;
+    
     font-size: 40px;
     
     background-color: yellow;
     border: 2px solid black;
-    
-    margin-right: 150px;
-    position: relative;
 }
 #yellowDiv span{ /*A page element with relative positioning gives you the control to absolutely position children elements inside of it*/
     position: absolute;
