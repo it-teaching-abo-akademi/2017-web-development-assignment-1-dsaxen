@@ -15,7 +15,7 @@ html *{
 #blueDiv{
     width: 200px;
     height: 200px;
-    background-color: blue;
+    background-color: #076CA7;
     
     font-size: 20px;
     color: white;
@@ -23,6 +23,9 @@ html *{
     
     margin-right: 250px;
     
+}
+#blueDiv p{
+    padding: 5px;
 }
 #yellowDiv{
     width: 200px;
@@ -35,6 +38,9 @@ html *{
     border: 2px solid black;
     
     margin-right: 150px;
+}
+#yellowDiv p{
+    margin: 5px;
 }
 #greenDiv{
     width: 200px;
@@ -49,7 +55,7 @@ html *{
 }
 #greenDiv span{ /*we need to position the text absolutely in order to exactly position a span element*/
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     right: 0;
     left: 0;
     text-align: center;
