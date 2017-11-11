@@ -24,9 +24,6 @@ html *{
     margin-right: 250px;
     
 }
-#blueDiv p{
-    padding-top: 5px;
-}
 #yellowDiv{
     width: 200px;
     height: 200px;
@@ -38,9 +35,12 @@ html *{
     border: 2px solid black;
     
     margin-right: 150px;
+    position: relative;
 }
-#yellowDiv p{
-    padding-left: 5px;
+#yellowDiv span{
+    position: absolute;
+    top: 80px;
+    left: 5px;
 }
 #greenDiv{
     width: 200px;
