@@ -21,8 +21,7 @@ html *{
     color: white;
     text-align: center;
     
-    margin-right: 250px;
-    
+    margin-right: 250px;    
 }
 #yellowDiv{
     width: 200px;
@@ -37,7 +36,7 @@ html *{
     margin-right: 150px;
     position: relative;
 }
-#yellowDiv span{
+#yellowDiv span{ /*A page element with relative positioning gives you the control to absolutely position children elements inside of it*/
     position: absolute;
     top: 80px;
     left: 5px;
@@ -53,7 +52,7 @@ html *{
     border: 2px solid black;
     margin-right: 250px;
 }
-#greenDiv span{ /*we need to position the text absolutely in order to exactly position a span element*/
+#greenDiv span{ 
     position: absolute;
     bottom: 2px;
     right: 0;
