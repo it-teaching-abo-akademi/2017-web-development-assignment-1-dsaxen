@@ -66,6 +66,9 @@ html *{
     background-color: lightgrey;
     border: 3px solid red;
 }
+#greyDiv span{
+    padding: 5px;
+}
 #backgroundtext{
    line-height: 200px;
    position: absolute;
