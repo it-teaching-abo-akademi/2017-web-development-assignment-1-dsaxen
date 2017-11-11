@@ -47,7 +47,7 @@ html *{
     border: 2px solid black;
     margin-right: 250px;
 }
-#greenDiv span{ /*we need to position the text absolutely*/
+#greenDiv span{ /*we need to position the text absolutely in order to exactly position a span element*/
     position: absolute;
     bottom: 0;
     right: 0;
@@ -67,7 +67,9 @@ html *{
     border: 3px solid red;
 }
 #greyDiv span{
-    padding: 5px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
 }
 #backgroundtext{
    line-height: 200px;
