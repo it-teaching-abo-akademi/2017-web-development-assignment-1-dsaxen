@@ -74,7 +74,7 @@ html *{
     left: 5px;
     top: 5px;
 }
-#backgroundtext{
+.backgroundtext{
    line-height: 200px;
    position: absolute;
    top: 0;
