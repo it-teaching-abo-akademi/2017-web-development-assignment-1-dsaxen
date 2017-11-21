@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="style1.css">
     <meta charset="utf-8">
+    <title>Index 1</title>
     <script>
     function allowDrop(ev) {  
         ev.preventDefault(); //Prevent default. Default is that data cannot be dropped
@@ -35,7 +36,7 @@
             <span>Text C</span>
         </div>
         <figure id="animatedfigure">
-            <img src="photo.jpg" width="200" height="200" border="2">
+            <img src="photo.jpg" width="200" height="200" border="2" alt="animatedPhoto">
             <figcaption>Photo 2</figcaption>
         </figure>
     </div>
@@ -43,7 +44,7 @@
     <div class="secondline">
         <div id="draggableimageDiv">
             <img src="photo.jpg" width="200" height="200" border="1" draggable="true" ondragstart="drag(event)" id="draggablepicture">
-            <div id="backgroundtext">Original image spot</div>
+            <div class="backgroundtext">Original image spot</div>
         </div>
         <div id="greyDiv">
             <span>Text D</span>
@@ -52,10 +53,10 @@
     
     <div class="thirdline">
         <div id="draganddrop1" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <div id="backgroundtext">Drag and Drop</div>
+            <div class="backgroundtext">Drag and Drop</div>
         </div>
         <div id="draganddrop2" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <div id="backgroundtext">Drag and Drop</div>
+            <div class="backgroundtext">Drag and Drop</div>
         </div>
     </div>
 </body>
