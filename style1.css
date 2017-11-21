@@ -91,13 +91,18 @@ html *{
     margin: 0; /* for some reason, figure had automatic margins*/
     animation: fadein 3s infinite;
 }
+#animatedPhoto{
+    border: 2;
+}
 #draggableimageDiv{
     position: relative;
     width: 200px;
     height: 200px;
     border: 1px solid black;
 }
-
+#draggablepicture{
+    border: 1;
+}
 #draganddrop1{
     position: relative;
     width: 200px;
